@@ -4,7 +4,7 @@ import Image from "next/image"
 import { useRef } from "react"
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion"
 import { TodayPanel } from "@/components/today-panel"
-import { SLICE_PRICE } from "@/data/products"
+import { SLICE_PRICE } from "@/data/flavors"
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null)
@@ -76,11 +76,11 @@ export function Hero() {
               <p className="text-muted-foreground max-w-sm text-lg leading-relaxed text-pretty">
                 Fatias generosas de bolos e tortas para deixar qualquer dia mais gostoso.
               </p>
-              <div className="border-cocoa/15 flex items-baseline gap-2 border-l-0 sm:border-l sm:pl-6">
+              <div className="border-cocoa/15 flex items-baseline border-l-0 sm:border-l sm:pl-6">
                 <span className="font-serif text-cocoa text-5xl font-black tracking-tight">
                   R$ {SLICE_PRICE}
                 </span>
-                <span className="text-muted-foreground text-sm font-semibold uppercase tracking-[0.16em]">
+                <span className="text-muted-foreground ml-2 text-sm font-semibold uppercase tracking-[0.16em]">
                   / fatia
                 </span>
               </div>

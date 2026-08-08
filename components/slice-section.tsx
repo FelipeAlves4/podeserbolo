@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { useRef } from "react"
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion"
-import { SLICE_PRICE } from "@/data/products"
+import { SLICE_PRICE } from "@/data/flavors"
 import { Reveal } from "@/components/reveal"
 
 export function SliceSection() {
@@ -24,12 +24,12 @@ export function SliceSection() {
           <div className="relative overflow-hidden rounded-[2.5rem] rounded-bl-[7rem]">
             <motion.div style={{ y, scale }} className="relative aspect-[4/5] w-full">
               <Image
-                src="/images/matilda.png"
-                alt="Camadas espessas da fatia Matilda com recheio de chocolate"
+                src="/images/fatia-generosa-real.png"
+                alt="Fatia generosa com cobertura, servida em embalagem"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover object-center"
               />
             </motion.div>
           </div>
