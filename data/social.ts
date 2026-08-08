@@ -27,5 +27,5 @@ export const FEED_IMAGES = [
   { src: "/images/matilda.png", alt: "Camadas da fatia Matilda" },
   { src: "/images/mousse-chocolate-nobre.png", alt: "Camadas da fatia Mousse de Chocolate Nobre" },
   { src: "/images/brigadeiro-de-panela.png", alt: "Camadas da fatia Brigadeiro de Panela" },
-  { src: "/images/sonho-de-valsa.png", alt: "Fatia Sonho de Valsa com bombom no topo" },
+  { src: "/images/sonho-de-valsa.png", alt: "Fatia alta e recheada da Pode Ser Bolo?" },
 ]

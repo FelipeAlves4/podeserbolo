@@ -65,7 +65,7 @@ export function ProductsSection() {
             </ul>
 
             <p className="mt-9 border-t border-cocoa-foreground/15 pt-5 text-sm leading-relaxed text-cocoa-foreground/70">
-              Os sabores do dia podem variar. Toda fatia sai por <span className="font-bold text-cocoa-foreground">R$ {SLICE_PRICE} / fatia</span>.
+              Os sabores variam ao longo da semana. Todas as fatias: <span className="font-bold text-cocoa-foreground">R$ {SLICE_PRICE}</span>.
             </p>
           </div>
         </Reveal>

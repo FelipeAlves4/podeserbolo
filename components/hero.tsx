@@ -80,7 +80,7 @@ export function Hero() {
                   R$ {SLICE_PRICE}
                 </span>
                 <span className="text-muted-foreground ml-2 text-sm font-semibold uppercase tracking-[0.16em]">
-                  / fatia
+                  por fatia
                 </span>
               </div>
             </motion.div>
@@ -99,7 +99,7 @@ export function Hero() {
             >
               <Image
                 src="/images/sonho-de-valsa.png"
-                alt="Fatia Sonho de Valsa alta e recheada, com bombom no topo"
+                alt="Fatia alta e recheada da Pode Ser Bolo?"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 45vw"
