@@ -16,11 +16,11 @@ export function SliceSection() {
   return (
     <section
       ref={ref}
-      className="relative py-20 md:py-28"
+      className="relative py-16 sm:py-20 md:py-28"
       aria-labelledby="fatia-title"
     >
       <div className="mx-auto w-full max-w-[1400px] px-5 md:px-8">
-        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+        <div className="grid items-center gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="relative overflow-hidden rounded-[2.5rem] rounded-bl-[7rem]">
             <motion.div style={{ y, scale }} className="relative aspect-[4/5] w-full">
               <Image

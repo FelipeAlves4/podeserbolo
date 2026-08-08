@@ -11,7 +11,7 @@ export function ProductsSection() {
   const reduced = useReducedMotion()
 
   return (
-    <section id="sabores" className="bg-blush/45 overflow-hidden py-20 md:py-28" aria-labelledby="sabores-title">
+    <section id="sabores" className="bg-blush/45 overflow-hidden py-16 sm:py-20 md:py-28" aria-labelledby="sabores-title">
       <div className="mx-auto w-full max-w-[1400px] px-5 md:px-8">
         <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
           <Reveal className="max-w-3xl">
@@ -32,7 +32,7 @@ export function ProductsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10% 0px" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="no-scrollbar mt-10 -mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 md:mx-0 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0"
+          className="no-scrollbar mt-8 -mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 sm:mt-10 md:mx-0 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0"
         >
           {FEATURED_FLAVORS.map((flavor, index) => (
             <li key={flavor.id} className={cn("w-[78vw] shrink-0 snap-center sm:w-[52vw] md:w-auto", index === 1 ? "md:mt-10" : "", index === 2 ? "md:-mt-3" : "")}>
@@ -42,22 +42,22 @@ export function ProductsSection() {
         </motion.ul>
 
         <Reveal delay={0.1}>
-          <div className="bg-cocoa mt-12 rounded-[2rem] px-6 py-8 text-cocoa-foreground sm:px-8 sm:py-10 md:px-12">
+          <div className="bg-cocoa mt-10 rounded-[2rem] px-5 py-7 text-cocoa-foreground sm:mt-12 sm:px-8 sm:py-10 md:px-12">
             <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-xl">
                 <p className="text-turquoise text-xs font-bold uppercase tracking-[0.22em]">Um cardápio de possibilidades</p>
-                <h3 className="font-serif mt-3 text-4xl font-black leading-none tracking-tight sm:text-5xl">Qual seria a sua?</h3>
+                <h3 className="font-serif mt-3 text-3xl font-black leading-none tracking-tight sm:text-5xl">Qual seria a sua?</h3>
               </div>
-              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="bg-cocoa-foreground text-cocoa hover:bg-turquoise inline-flex w-full shrink-0 items-center justify-center rounded-full px-6 py-3.5 text-center text-sm font-bold transition-colors sm:w-auto">
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="bg-cocoa-foreground text-cocoa hover:bg-turquoise inline-flex w-full shrink-0 items-center justify-center rounded-full px-5 py-3.5 text-center text-xs font-bold transition-colors sm:w-auto sm:px-6 sm:text-sm">
                 Ver sabores de hoje no Instagram
               </a>
             </div>
 
-            <ul className="mt-10 grid gap-x-8 gap-y-1.5 sm:grid-cols-2 lg:grid-cols-3" aria-label="Sabores já preparados pela Pode Ser Bolo?">
+            <ul className="mt-8 grid grid-cols-2 gap-x-4 gap-y-1.5 sm:mt-10 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3" aria-label="Sabores já preparados pela Pode Ser Bolo?">
               {FLAVORS.map((flavor) => (
                 <li key={flavor.id}>
-                  <span className="group inline-flex cursor-default items-center gap-2 py-1 font-serif text-xl font-bold leading-tight text-cocoa-foreground/80 transition-colors hover:text-turquoise sm:text-2xl">
-                    <span className="bg-rose size-1.5 shrink-0 rounded-full opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true" />
+                  <span className="group grid cursor-default grid-cols-[0.375rem_minmax(0,1fr)] items-start gap-1.5 py-1 font-serif text-[1rem] font-bold leading-[1.12] text-cocoa-foreground/80 transition-colors hover:text-turquoise sm:grid-cols-[0.5rem_minmax(0,1fr)] sm:gap-2 sm:text-xl lg:text-2xl">
+                    <span className="bg-rose mt-1.5 size-1.5 shrink-0 rounded-full opacity-0 transition-opacity group-hover:opacity-100 sm:size-2" aria-hidden="true" />
                     {flavor.name}
                   </span>
                 </li>
