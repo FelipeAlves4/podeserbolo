@@ -1,5 +1,6 @@
 import { SiteHeader } from "@/components/site-header"
 import { Hero } from "@/components/hero"
+import { TodayPanel } from "@/components/today-panel"
 import { RouteSection } from "@/components/route-section"
 import { ProductsSection } from "@/components/products-section"
 import { SliceSection } from "@/components/slice-section"
@@ -16,6 +17,11 @@ export default function Page() {
       <SiteHeader />
       <main>
         <Hero />
+        <section className="relative -mt-2 pb-2 md:-mt-4 md:pb-4" aria-label="Onde estamos hoje">
+          <div className="mx-auto w-full max-w-[1400px] px-5 md:px-8 lg:max-w-2xl">
+            <TodayPanel />
+          </div>
+        </section>
         <RouteSection />
         <ProductsSection />
         <SliceSection />

@@ -3,7 +3,6 @@
 import Image from "next/image"
 import { useRef } from "react"
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion"
-import { TodayPanel } from "@/components/today-panel"
 import { SLICE_PRICE } from "@/data/flavors"
 
 export function Hero() {
@@ -124,15 +123,6 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* Onde estamos hoje */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5, ease }}
-          className="mt-14 md:mt-20 lg:max-w-2xl"
-        >
-          <TodayPanel />
-        </motion.div>
       </div>
     </section>
   )
