@@ -1,32 +1,26 @@
 /**
  * Camada de acesso ao conteúdo do site.
- *
- * Hoje tudo vem dos arquivos estáticos em `data/`.
- * Quando existir o painel /admin com backend, basta trocar a implementação
- * destas funções (ex.: buscar no banco) sem tocar em nenhum componente.
+ * Quando existir um painel administrativo, a origem pode ser trocada sem
+ * alterar os componentes que consomem estes dados.
  */
 
-import { PRODUCTS, SLICE_PRICE, type Product } from "@/data/products"
+import { FLAVORS, SLICE_PRICE, type Flavor } from "@/data/flavors"
 import { SCHEDULE, type Stop } from "@/data/schedule"
 
 export type SiteContent = {
   schedule: Stop[]
-  products: Product[]
+  flavors: Flavor[]
   slicePrice: number
 }
 
 export async function getSiteContent(): Promise<SiteContent> {
-  return {
-    schedule: SCHEDULE,
-    products: PRODUCTS,
-    slicePrice: SLICE_PRICE,
-  }
+  return { schedule: SCHEDULE, flavors: FLAVORS, slicePrice: SLICE_PRICE }
 }
 
 export async function getSchedule(): Promise<Stop[]> {
   return SCHEDULE
 }
 
-export async function getProducts(): Promise<Product[]> {
-  return PRODUCTS
+export async function getFlavors(): Promise<Flavor[]> {
+  return FLAVORS
 }
